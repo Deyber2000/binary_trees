@@ -8,6 +8,7 @@ binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value)
 	new = binary_tree_node(parent, value);
 	if (!new)
 		return (NULL);
+	/*OJO WE have to make 3 connections if !parent->left, and 4 connections if parent->left*/
 	if (parent->left != NULL)
 	{
 		new->left = parent->left; 
