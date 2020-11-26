@@ -1,5 +1,11 @@
 #include "binary_trees.h"
 
+/**
+ * binary_tree_leaves_recursion - recursive method for binary_tree_leaves
+ * @tree: root.
+ * @count: counter.
+ */
+
 void binary_tree_leaves_recursion(const binary_tree_t *tree, size_t *count)
 {
 	if (tree)
@@ -14,6 +20,12 @@ void binary_tree_leaves_recursion(const binary_tree_t *tree, size_t *count)
 	}
 }
 
+/**
+ * binary_tree_leaves - Counts the leaves n a binary tree.
+ * @tree: root.
+ * Return: Number of leaves, 0 if tree is NULL.
+ */
+
 size_t binary_tree_leaves(const binary_tree_t *tree)
 {
 	size_t count = 0;
@@ -21,16 +33,16 @@ size_t binary_tree_leaves(const binary_tree_t *tree)
 	return (count);
 }
 
-/*
-size_t binary_tree_leaves(const binary_tree_t *tree)
-{
-	size_t leaves = 0;
-	if (tree)
-	{
-		leaves += (!tree->left && !tree->right) ? 1 : 0;
-		leaves += binary_tree_leaves(tree->left);
-		leaves += binary_tree_leaves(tree->right);
-	}
-	return (leaves);
-}
-*/
+/**
+ * size_t binary_tree_leaves(const binary_tree_t *tree)
+ * {
+ * 	size_t leaves = 0;
+ * 	if (tree)
+ * 	{
+ * 		leaves += (!tree->left && !tree->right) ? 1 : 0;
+ * 		leaves += binary_tree_leaves(tree->left);
+ * 		leaves += binary_tree_leaves(tree->right);
+ * 	}
+ * 	return (leaves);
+ * }
+ */
