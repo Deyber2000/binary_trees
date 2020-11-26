@@ -1,5 +1,11 @@
 #include "binary_trees.h"
 
+/**
+ * binary_tree_rotate_right - Rotates a binary tree to the right.
+ * @tree: root.
+ * Return: new root.
+ */
+
 binary_tree_t *binary_tree_rotate_right(binary_tree_t *tree)
 {
 	binary_tree_t *pivot, *tmp;

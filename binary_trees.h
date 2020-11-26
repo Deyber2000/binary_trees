@@ -13,13 +13,15 @@
  * @left: Pointer to the left child node
  * @right: Pointer to the right child node
  */
-typedef struct binary_tree_s
+struct binary_tree_s
 {
 	int n;
 	struct binary_tree_s *parent;
 	struct binary_tree_s *left;
 	struct binary_tree_s *right;
-} binary_tree_t;
+}
+typedef struct binary_tree_s binary_tree_t;
+typedef struct binary_tree_s bst_t;
 
 /* Binary Search Tree */
 typedef struct binary_tree_s bst_t;
@@ -61,4 +63,8 @@ bst_t *bst_insert(bst_t **tree, int value);
 bst_t *array_to_bst(int *array, size_t size);
 bst_t *bst_search(const bst_t *tree, int value);
 bst_t *bst_remove(bst_t *root, int value);
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4b8ccab88e16cd0c026ec5a9b4898216cd4e1aa3
 #endif /* _BINARY_TREES_H_ */
