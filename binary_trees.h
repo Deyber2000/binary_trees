@@ -63,8 +63,4 @@ bst_t *bst_insert(bst_t **tree, int value);
 bst_t *array_to_bst(int *array, size_t size);
 bst_t *bst_search(const bst_t *tree, int value);
 bst_t *bst_remove(bst_t *root, int value);
-<<<<<<< HEAD
-=======
-
->>>>>>> 4b8ccab88e16cd0c026ec5a9b4898216cd4e1aa3
 #endif /* _BINARY_TREES_H_ */
