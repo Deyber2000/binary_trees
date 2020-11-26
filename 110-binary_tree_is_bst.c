@@ -4,8 +4,8 @@
 /**
  * binary_tree_is_bst_aux - Aux function for is_bst.
  * @tree: root.
- * @lowest:
- * @highest:
+ * @lowest: lowest.
+ * @highest: highest.
  * Return: True or false.
  */
 

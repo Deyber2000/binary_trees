@@ -16,9 +16,9 @@ size_t binary_tree_size(const binary_tree_t *tree)
 /**
  * is_complete - 
  * @tree: root.
- * @index:
- * @size:
- * Return:
+ * @index: index.
+ * @size: size.
+ * Return: True or False.
  */
 
 int is_complete(const binary_tree_t *tree, unsigned int index, size_t size)
