@@ -5,11 +5,12 @@
  * @tree: root.
  * Return: 1 if full, 0 if not.
  */
-
 int binary_tree_is_full_aux(const binary_tree_t *tree)
 {
 		if (tree)
 			{
+			/*if the current node has only one child, or if any*/
+			/*reccurrence to the right or left has only one child*/
 			if ((tree->right && !tree->left) ||
 				(!tree->right && tree->left)
 				|| binary_tree_is_full_aux(tree->left) == 0
@@ -24,7 +25,6 @@ int binary_tree_is_full_aux(const binary_tree_t *tree)
  * @tree: root.
  * Return: 1 if full, 0 if not.
  */
-
 int binary_tree_is_full(const binary_tree_t *tree)
 {
 	if (!tree)
