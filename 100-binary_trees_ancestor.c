@@ -4,12 +4,15 @@
  * binary_trees_ancestor - Finds lowest common ancestor of two nodes.
  * @first: pointer to first node.
  * @second: pointer to second node.
+ *
  * Return: POinter to the lowesrt common ancestor.
  */
 
-binary_tree_t *binary_trees_ancestor(const binary_tree_t *first, const binary_tree_t *second)
+binary_tree_t
+*binary_trees_ancestor(const binary_tree_t *first, const binary_tree_t *second)
 {
 	binary_tree_t *mother, *father;
+
 	if (!first || !second)
 		return (NULL);
 	if (first == second)
