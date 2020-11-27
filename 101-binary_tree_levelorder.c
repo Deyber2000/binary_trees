@@ -6,7 +6,6 @@
  *
  * Return: height of tree, Null if tree is NULL.
  */
-
 size_t binary_tree_height(const binary_tree_t *tree)
 {
 	size_t l_height = 0, r_height = 0;
@@ -50,7 +49,6 @@ void binary_tree_level(const binary_tree_t *tree, size_t l, void(*func)(int))
  *
  * Return: does not return something
  */
-
 void binary_tree_levelorder(const binary_tree_t *tree, void (*func)(int))
 {
 	size_t height, i;
