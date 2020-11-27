@@ -30,6 +30,8 @@ int binary_tree_balance(const binary_tree_t *tree)
 {
 	if (!tree)
 		return (0);
+	/*Balance factor: The diff betwwen the left height and the right height*/
+	/*Including the nodes on the left and right hand side of the root*/
 	return (binary_tree_height_plus_one(tree->left)
 		- binary_tree_height_plus_one(tree->right));
 }
