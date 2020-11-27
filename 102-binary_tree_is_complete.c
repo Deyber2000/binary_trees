@@ -5,7 +5,6 @@
  * @tree: root.
  * Return: size of the tree, 0 if tree is NULL.
  */
-
 size_t binary_tree_size(const binary_tree_t *tree)
 {
 	if (!tree)
@@ -20,7 +19,6 @@ size_t binary_tree_size(const binary_tree_t *tree)
  * @size: size.
  * Return: True or False.
  */
-
 int is_complete(const binary_tree_t *tree, unsigned int index, size_t size)
 {
 	if (!tree)
@@ -36,7 +34,6 @@ int is_complete(const binary_tree_t *tree, unsigned int index, size_t size)
  * @tree: root.
  * Return: 1 if complete, 0 if not.
  */
-
 int binary_tree_is_complete(const binary_tree_t *tree)
 {
 	size_t size;
