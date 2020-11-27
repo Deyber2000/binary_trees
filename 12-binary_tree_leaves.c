@@ -5,7 +5,6 @@
  * @tree: root of the bibary tree.
  * @count: counter.
  */
-
 void binary_tree_leaves_recursion(const binary_tree_t *tree, size_t *count)
 {
 	if (tree)
@@ -25,7 +24,6 @@ void binary_tree_leaves_recursion(const binary_tree_t *tree, size_t *count)
  * @tree: root.
  * Return: Number of leaves, 0 if tree is NULL.
  */
-
 size_t binary_tree_leaves(const binary_tree_t *tree)
 {
 	size_t count = 0;
@@ -33,3 +31,17 @@ size_t binary_tree_leaves(const binary_tree_t *tree)
 	binary_tree_leaves_recursion(tree, &count);
 	return (count);
 }
+
+
+/*OTHER WAY*/
+/*size_t binary_tree_leaves(const binary_tree_t *tree)*/
+/*{*/
+/*	size_t leaves = 0;*/
+/*	if (tree)*/
+/*	{*/
+/*			leaves += (!tree->left && !tree->right) ? 1 : 0;*/
+/*			leaves += binary_tree_leaves(tree->left);*/
+/*			leaves += binary_tree_leaves(tree->right);*/
+/*	}*/
+/*	return(leaves);*/
+/*}*/

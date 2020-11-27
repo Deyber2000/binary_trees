@@ -5,7 +5,6 @@
  * @tree: root node.
  * Return: depth of node, NULL if tree is NULL.
  */
-
 size_t binary_tree_depth(const binary_tree_t *tree)
 {
 	size_t depth = 0;
@@ -18,5 +17,5 @@ size_t binary_tree_depth(const binary_tree_t *tree)
 		depth++;
 	}
 	return (depth);
-	/*return((tree && tree->parent) ? 1 + binary_tree_depth : 0);*/
+	/*return((tree && tree->parent) ? 1 + binary_tree_depth(tree->parent): 0);*/
 }
