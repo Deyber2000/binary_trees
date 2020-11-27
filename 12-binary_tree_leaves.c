@@ -2,7 +2,7 @@
 
 /**
  * binary_tree_leaves_recursion - recursive method for binary_tree_leaves
- * @tree: root.
+ * @tree: root of the bibary tree.
  * @count: counter.
  */
 
@@ -29,20 +29,7 @@ void binary_tree_leaves_recursion(const binary_tree_t *tree, size_t *count)
 size_t binary_tree_leaves(const binary_tree_t *tree)
 {
 	size_t count = 0;
+
 	binary_tree_leaves_recursion(tree, &count);
 	return (count);
 }
-
-/**
- * size_t binary_tree_leaves(const binary_tree_t *tree)
- * {
- * 	size_t leaves = 0;
- * 	if (tree)
- * 	{
- * 		leaves += (!tree->left && !tree->right) ? 1 : 0;
- * 		leaves += binary_tree_leaves(tree->left);
- * 		leaves += binary_tree_leaves(tree->right);
- * 	}
- * 	return (leaves);
- * }
- */
