@@ -1,10 +1,5 @@
 #include "binary_trees.h"
 
-bst_t *inorder_successor(bst_t *root);
-bst_t *bst_delete(bst_t *root, bst_t *node);
-bst_t *bst_remove_recursive(bst_t *root, bst_t *node, int value);
-bst_t *bst_remove(bst_t *root, int value);
-
 /**
  * inorder_successor - Returns the minimum value of a binary search tree.
  * @root: A pointer to the root node of the BST to search.
@@ -29,7 +24,6 @@ bst_t *bst_delete(bst_t *root, bst_t *node)
 {
 	bst_t *parent = node->parent, *successor = NULL;
 
-	/* No children or right-child only */
 	if (node->left == NULL)
 	{
 		if (parent != NULL && parent->left == node)
@@ -41,8 +35,6 @@ bst_t *bst_delete(bst_t *root, bst_t *node)
 		free(node);
 		return (parent == NULL ? node->right : root);
 	}
-
-	/* Left-child only */
 	if (node->right == NULL)
 	{
 		if (parent != NULL && parent->left == node)
