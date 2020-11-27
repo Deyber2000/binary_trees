@@ -3,6 +3,7 @@
 /**
  * binary_tree_rotate_right - Rotates a binary tree to the right.
  * @tree: root.
+ *
  * Return: new root.
  */
 
@@ -26,7 +27,7 @@ binary_tree_t *binary_tree_rotate_right(binary_tree_t *tree)
 		if (tmp->left == tree)
 			tmp->left = pivot;
 		else
-			tmp->right = pivot;	
+			tmp->right = pivot;
 	}
-	return (pivot);		
+	return (pivot);
 }
