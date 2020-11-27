@@ -5,7 +5,6 @@
  * @tree: root node.
  * @func: pointer to function to print each node.
  */
-
 void binary_tree_inorder(const binary_tree_t *tree, void (*func)(int))
 {
 	if (tree && func)
